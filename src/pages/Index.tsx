@@ -27,6 +27,10 @@ const Index = () => {
     };
 
     setMessages(prev => [...prev, userMessage]);
+    
+    // Clear files after sending message so they're associated with this question
+    setFiles([]);
+    
     setIsTyping(true);
 
     // Simulate AI response

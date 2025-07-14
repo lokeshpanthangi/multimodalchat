@@ -91,7 +91,7 @@ export const ChatInput = ({
 
   return (
     <div className={cn("border-t border-border px-6 py-4", className)}>
-      <form onSubmit={handleSubmit} className="w-full mx-auto">
+      <form onSubmit={handleSubmit} className="max-w-4xl mx-auto">
         <div className="relative flex items-end gap-3">
           {/* Text input with pin button inside */}
           <div className="flex-1 relative">

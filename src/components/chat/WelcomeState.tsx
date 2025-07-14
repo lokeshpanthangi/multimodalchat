@@ -45,6 +45,20 @@ export const WelcomeState = ({ onUploadClick }: WelcomeStateProps) => {
           Supports PDF, Word, Excel, PowerPoint, and images
         </p>
 
+        {/* Suggested actions */}
+        <div className="flex flex-wrap gap-2 justify-center">
+          {suggestions.map((suggestion, index) => (
+            <Button
+              key={index}
+              variant="outline"
+              onClick={suggestion.action}
+              className="rounded-full bg-card border-muted hover:bg-muted/50 transition-colors"
+            >
+              <suggestion.icon className="h-4 w-4 mr-2" />
+              {suggestion.text}
+            </Button>
+          ))}
+        </div>
 
         {/* Upload hint */}
         <div className="mt-8 p-4 bg-muted/30 rounded-lg border border-dashed border-muted">

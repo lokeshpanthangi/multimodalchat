@@ -47,7 +47,7 @@ export const ChatContainer = ({
       {isEmpty ? (
         <WelcomeState onUploadClick={onUploadClick} />
       ) : (
-        <div className="max-w-4xl mx-auto px-6 py-6">
+        <div className="w-full px-6 py-6">
           {messages.map((message) => (
             <ChatMessage
               key={message.id}

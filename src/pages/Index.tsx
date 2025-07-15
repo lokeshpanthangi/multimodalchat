@@ -96,7 +96,7 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="h-full bg-background flex flex-col">
+    <div className="min-h-screen bg-background flex flex-col">
       <ChatHeader
         onClearFiles={handleClearFiles}
         hasFiles={files.length > 0}
